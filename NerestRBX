@@ -14,6 +14,32 @@ Tab:AddButton({
   	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "Aimbot"
+})
+
+Tab:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/qw1dixx/NerestRBX_Functions/main/NerestRBX_Aimbot"))()
+  	end    
+})
+
+Tab:AddSlider({
+	Name = "GravityHack (normal is 196)",
+	Min = 0,
+	Max = 500,
+	Default = 196,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(Value)
+		workspace.Gravity = Value
+	end    
+})
+
+
+
 
 
 

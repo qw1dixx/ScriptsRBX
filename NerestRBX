@@ -1,28 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "NerestRBX", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = true, IntroText = "Loading..."})
+local Window = OrionLib:MakeWindow({Name = "NerestRBX (beta)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = true, IntroText = "Loading..."})
 
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Fly (не воркает)",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/qw1dixx/NerestRBXF/main/NerestRBXFly"))()
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Aimbot"
-})
-
-Tab:AddButton({
-	Name = "Aimbot",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/qw1dixx/NerestRBX_Functions/main/NerestRBX_Aimbot"))()
-  	end    
 })
 
 Tab:AddTextbox({
@@ -33,7 +15,6 @@ Tab:AddTextbox({
 		workspace.Gravity = Value
 	end	  
 })
-
 
 
 

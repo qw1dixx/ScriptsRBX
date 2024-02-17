@@ -70,6 +70,15 @@ end
   	end    
 })
 
+Tab:AddTextbox({
+	Name = "High Hips",
+	Default = "1",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.Character.Humanoid.HipHeight = Value
+	end	  
+})
+
 
 
 

@@ -161,6 +161,19 @@ if rightFoot then rightFoot.Transparency = 1 end
   	end    
 })
 
+Tab:AddTextbox({
+	Name = "Teleport to Player",
+	Default = "Username123",
+	TextDisappear = true,
+	Callback = function(Value)
+		targetUsername = Value
+
+players = game:GetService("Players")
+targetPlayer = players:FindFirstChild(targetUsername)
+players.LocalPlayer.Character:MoveTo(targetPlayer.Character.HumanoidRootPart.Position)
+	end	  
+})
+
 
 
 

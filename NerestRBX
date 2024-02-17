@@ -25,18 +25,16 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddSlider({
+Tab:AddTextbox({
 	Name = "GravityHack (normal is 196)",
-	Min = 0,
-	Max = 500,
-	Default = 196,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "",
+	Default = "196",
+	TextDisappear = true,
 	Callback = function(Value)
 		workspace.Gravity = Value
-	end    
+	end	  
 })
+
+
 
 
 

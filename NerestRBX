@@ -17,7 +17,7 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
-	Name = "FlashlightHack",
+	Name = "HumanFlashlight",
 	Callback = function()
       		character = game:GetService("Players").LocalPlayer.Character
 pointLight = Instance.new("PointLight")

@@ -80,7 +80,7 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
-	Name = "Remove Arms",
+	Name = "RemoveArms",
 	Callback = function()
       		character = game:GetService("Players").LocalPlayer.Character
 
